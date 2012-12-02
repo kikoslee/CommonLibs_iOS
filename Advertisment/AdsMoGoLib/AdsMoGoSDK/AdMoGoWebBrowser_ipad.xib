@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1536</int>
-		<string key="IBDocument.SystemVersion">11E53</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2829</string>
-		<string key="IBDocument.AppKitVersion">1138.47</string>
+		<string key="IBDocument.SystemVersion">11G56</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
+		<string key="IBDocument.AppKitVersion">1138.51</string>
 		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1914</string>
+			<string key="NS.object.0">1926</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>IBProxyObject</string>
@@ -42,6 +42,7 @@
 						<int key="NSvFlags">266</int>
 						<string key="NSFrame">{{0, 960}, {768, 44}}</string>
 						<reference key="NSSuperview" ref="146650792"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="716334015"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
@@ -56,6 +57,7 @@
 						<int key="NSvFlags">264</int>
 						<string key="NSFrame">{{87, 960}, {108, 44}}</string>
 						<reference key="NSSuperview" ref="146650792"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="280775163"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -94,6 +96,7 @@
 						<int key="NSvFlags">264</int>
 						<string key="NSFrame">{{195, 960}, {108, 44}}</string>
 						<reference key="NSSuperview" ref="146650792"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="691726569"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -119,6 +122,7 @@
 						<int key="NSvFlags">264</int>
 						<string key="NSFrame">{{411, 960}, {108, 44}}</string>
 						<reference key="NSSuperview" ref="146650792"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="722593293"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -144,6 +148,7 @@
 						<int key="NSvFlags">264</int>
 						<string key="NSFrame">{{519, 960}, {108, 44}}</string>
 						<reference key="NSSuperview" ref="146650792"/>
+						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -172,6 +177,7 @@
 						<int key="NSvFlags">264</int>
 						<string key="NSFrame">{{303, 960}, {108, 44}}</string>
 						<reference key="NSSuperview" ref="146650792"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="647978738"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -197,6 +203,7 @@
 						<int key="NSvFlags">274</int>
 						<string key="NSFrameSize">{768, 961}</string>
 						<reference key="NSSuperview" ref="146650792"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="708772843"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
@@ -210,6 +217,7 @@
 				</array>
 				<string key="NSFrameSize">{768, 1004}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="68219060"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
@@ -533,6 +541,6 @@
 			<string key="webview_bar_pause_ipad.png">{108, 44}</string>
 			<string key="webview_bar_share_ipad.png">{108, 44}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">1914</string>
+		<string key="IBCocoaTouchPluginVersion">1926</string>
 	</data>
 </archive>

@@ -66,7 +66,8 @@
 - (void)adMoGoFullScreenAdFailedWithError:(NSError *) error;
 - (void)adMoGoWillPresentFullScreenAdModal;
 - (void)adMoGoDidDismissFullScreenAdModal;
-
+//Whether popup alertView
+-(BOOL)shouldAlertQAView:(UIAlertView *)alertView;
 
 #pragma mark MoGoWebBrowser Delegate
 

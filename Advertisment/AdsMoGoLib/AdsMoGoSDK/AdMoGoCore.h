@@ -90,11 +90,15 @@ typedef  enum{
 
 - (void)adapter:(AdMoGoAdNetworkAdapter *)adapter didGetAd:(NSString *)adType;
 
-- (void)adapter:(AdMoGoAdNetworkAdapter *)adapter didReceiveAdView:(UIView *)view ;
+- (void)adapter:(AdMoGoAdNetworkAdapter *)adapter didReceiveAdView:(UIView *)view;
+
+- (void)adapter:(AdMoGoAdNetworkAdapter *)_adapter didReceiveAdView:(UIView *)view waitUntilDone:(BOOL)isWait;
 
 - (void)adapter:(AdMoGoAdNetworkAdapter *)adapter didFailAd:(NSError *)error ;
 
 - (void)adapterDidFinishAdRequest:(AdMoGoAdNetworkAdapter *)adapter;
+
+-(BOOL)shouldAlertQAView:(UIAlertView *)alertView;
 /*
     发送点击计数
  */
@@ -107,6 +111,11 @@ typedef  enum{
 
 
 - (void)adDidStartRequestAd;
+
+/**
+ *获取适配器集合
+ */
+-(NSMutableArray *)getUsedAdaptersArray;
 
 //- (void)adMoGoDidReceiveAd;
 

@@ -34,7 +34,7 @@
 //获取配置所用的Key
 @property(nonatomic,assign)NSString * configKey;
 @property(nonatomic,assign)id<AdMoGoLocationDelegate> delegate;
-@property(nonatomic,assign)CLLocationManager *locationManager;
+@property(assign)CLLocationManager *locationManager;
 -(NSString *)currentLocaleCountryCode:(BOOL)locationOn;
 - (void)stopLocation;
 @end

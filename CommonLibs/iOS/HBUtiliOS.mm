@@ -131,6 +131,11 @@ const char* getLocalizedString(const char* str)
 
 void HBUtilies::gotoReview()
 {
+#if HBCHANNEL == 1
     NSString *str = [NSString stringWithFormat:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%s", kAppIDiOS];
+#elif HBCHANNEL == 2
+    NSString *str = @"http://mobile.91.com/Soft/iPhone/com.lihostudio.tapburstfree-2.1.0-2.1.0.html";
+#else
+#endif
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
 }

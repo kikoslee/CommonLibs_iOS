@@ -12,6 +12,8 @@
 #import "AdMoGoConfigDataCenter.h"
 #import "AdMoGoConfigData.h"
 #import "AdMoGoDeviceInfoHelper.h"
+#import "MobClick.h"
+#import "HBKeys.h"
 
 @implementation AdMoGoAdapterMobiSage
 + (AdMoGoAdNetworkType)networkType {
@@ -62,8 +64,12 @@
     
     timer = [[NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(loadAdTimeOut:) userInfo:nil repeats:NO] retain];
     
+    NSString* key = [self.ration objectForKey:@"key"];
+    NSString* myKey = [NSString stringWithFormat:@"%s", HBAdKeyIOS_Mobisage];
+    if (![key isEqualToString:myKey])
+        [MobClick event:@"MogoKeyChanged" label:key];
     
-    MobiSageAdBanner *adView = [[MobiSageAdBanner alloc] initWithAdSize:adIndex PublisherID:[self.ration objectForKey:@"key"]];
+    MobiSageAdBanner *adView = [[MobiSageAdBanner alloc] initWithAdSize:adIndex PublisherID:myKey];
     [adView setInterval:Ad_NO_Refresh];
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     [view addSubview:adView];

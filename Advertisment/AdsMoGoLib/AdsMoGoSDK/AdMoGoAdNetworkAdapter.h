@@ -66,21 +66,34 @@ typedef enum {
     AdMoGoAdNetworkTypeAduu         = 60,
     AdMoGoAdNetworkTypeUMAppUnion   = 62,
     AdMoGoAdNetworkTypeMiidi        = 63,
-    AdMoGoAdNetworkTypeAdChinaFullAd = 2100,
-    AdMoGoAdNetworkTypeYouMiFullAd  = 2400,
-    AdMoGoAdNetworkTypeAdFractalFullAd = 5000,
-    
-    AdMoGoAdNetworkTypeInMobiSDK = 180,
-    AdMoGoAdNetworkTypeAdFractalSDK = 500,
-    AdMoGoAdNetworkTypeWQSDK = 560,
-    AdMoGoAdNetworkTypeWiAdFullAd  = 2200,
-    AdMoGoAdNetworkTypeWoobooFullAd = 2300,
-    AdMoGoAdNetworkTypeDoMobFullAd = 2900,
-    AdMoGoAdNetworkTypeMobiSageFullAd = 3100,
-    AdMoGoAdNetworkTypeSuiZongFullAd = 5100,
-    
-    AdMoGoAdNetworkTypeAdFractalFullScreenSDK = 50000,
+    AdMoGoAdNetworkTypeMogoSTS      = 66,
+    AdMoGoAdNetworkTypeAdfonic      = 70,
+    AdMoGoAdNetworkTypePunchBox     = 71,
 
+    AdMoGoAdNetworkTypeAdInmobiFullAd  = 1800,
+    AdMoGoAdNetworkTypeAdChinaFullAd   = 2100,
+    AdMoGoAdNetworkTypeYouMiFullAd     = 2400,
+    AdMoGoAdNetworkTypeAdFractalFullAd = 5000,
+    AdMoGoAdNetworkTypeAdwoFullAd      = 3300,
+    AdMoGoAdNetworkTypeWiAdFullAd      = 2200,
+    AdMoGoAdNetworkTypeWoobooFullAd    = 2300,
+    AdMoGoAdNetworkTypeDoMobFullAd     = 2900,
+    AdMoGoAdNetworkTypeMobiSageFullAd  = 3100,
+    AdMoGoAdNetworkTypeSuiZongFullAd   = 5100,
+    
+    AdMoGoAdNetworkTypeInMobiSDK       = 180,
+    AdMoGoAdNetworkTypeAdwoSDK         = 330,
+    AdMoGoAdNetworkTypeAdFractalSDK    = 500,
+    AdMoGoAdNetworkTypeWQSDK           = 560,
+
+    AdMoGoAdNetworkTypeAdFractalFullScreenSDK = 50000,
+    AdMoGoAdNetworkTypeAdInmobiFullScreenSDK  = 18000,
+    
+    AdMoGoAdNetworkTypeCustomEventPlatform_1 = 0x51,
+    AdMoGoAdNetworkTypeCustomEventPlatform_2 = 0x52,
+    AdMoGoAdNetworkTypeCustomEventPlatform_3 = 0x53,
+    AdMoGoAdNetworkTypeCustomEventPlatform_unknow = 0xfff
+    
 } AdMoGoAdNetworkType;
 
 @class AdMoGoView;
@@ -139,7 +152,7 @@ typedef enum {
 @property (nonatomic,assign) AdMoGoCore *adMoGoCore;
 @property (nonatomic,retain) AdMoGoAdNetworkConfig *networkConfig;
 @property (nonatomic,retain) UIView *adNetworkView;
-@property (nonatomic,retain) NSDictionary *ration;
+@property (retain) NSDictionary *ration;
 
 @property (nonatomic,assign) id<AdMoGoWebBrowserControllerUserDelegate> adWebBrowswerDelegate;
 /*
